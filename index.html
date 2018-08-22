@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <!-- head -->
     <head>
         <meta charset="utf-8" />
@@ -31,206 +30,162 @@
     <!-- body -->
     <body>
         <!-- header -->
-        <div class="block is-black" id="home">
-             <header class="header">
-                <div class="columns">
-                    <div class="column menu-mobile">
-                        <a href="#" class="header-logo">Mamadou Bah - Portfolio</a>
+        <section class="hero is-dark is-medium">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item">Mamadou Bah - Portfolio</a>
+                        <span id="burger" class="navbar-burger burger" data-target="navbarMenuHeroA">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
                     </div>
-                    <div class="column menu-mobile">
-                        <nav class="header-menu">
-                            <a href="#home">Home</a>
-                            <a href="#about">About</a>
-                            <a href="#portfolio">Portfolio</a>
-                            <a href="#contact">Contact</a>
-                        </nav>
-                    </div>   
+                    <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item" href="#">Home</a>
+                            <a class="navbar-item" href="#about">About</a>
+                            <a class="navbar-item" href="#portfolio">Portfolio</a>
+                            <a class="navbar-item" href="mailto:mmbah097@gmail.com" target="_blank">Contact</a>
+                            <span class="navbar-item">
+                                <a class="button is-primary is-inverted" href="https://github.com/Mousto097/mousto097.github.io/blob/master/src/resume/MoustoResume.pdf" download="MoustoResume.pdf" target="_blank">
+                                    <span class="icon"><i class="fas fa-file-download"></i></span><span>Resume</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
-            </header>      
+            </nav>
         </div>
         <!-- end header -->
 
         <!-- banner -->
-        <div class="block">
-             <div class="banner">
-                 <!-- <img src="src/img/finale.png" alt="Two computer screens in a dark office"> -->
-                 <div class="banner-content test">
+        <div class="block banner-block">
+            <div class="banner">
+                <div class="banner-content">
                     <h1 class="is-1">Welcome to my Portfolio</h1>
                     <h2 class="is-2">Discover my work and my universe !</h2>
-                     <button class="button is-link" id="open_modal">Contact me here</button>
-                 </div>
-             </div>
+                    <div class="banner-contact">
+                        <a href="mailto:mmbah097@gmail.com" target="_blank"><button class="button is-medium is-black contact-button">Contact me</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- end banner -->
 
-            <!-- modal -->
-            <div class="modal own-modal" id="modal_to_open">
-                <div class="modal-background"></div>
-                <div class="modal-card">
-                    <header class="modal-card-head">
-                    <p class="modal-card-title">Modal title</p>
-                    <button class="delete" aria-label="close" id="close_modal"></button>
-                    </header>
-                    <section class="modal-card-body">
-                    <!-- Content ... -->
-                    <p>Le contenu de mon modal</p>
-                    <p>Mettre un formulaire ici</p>
-                    </section>
-                    <footer class="modal-card-foot">
-                    <button class="button is-link">Save changes</button>
-                    </footer>
-                </div>
-            </div>
-
-            <!-- end modal -->
-
-        <!-- about me -->
-        <div class="block">
-            <h2 class="subtitle heading-site" id="about">About me</h2>
-            <div class="container about">
-                <div class="columns">
-                    <div class="column about-single-element">
-                        <i class="fas fa-code icon"></i>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="column about-single-element">
-                        <i class="fas fa-coffee icon"></i>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="column about-single-element">
-                        <i class="fas fa-pencil-alt icon"></i>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <!-- about me -->
+                <div class="block">
+                    <h2 class="subtitle heading-site" id="about">About me</h2>
+                    <div class="container about">
+                        <div class="columns">
+                            <div class="column about-single-element">
+                                <i class="fas fa-code icon"></i>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                            <div class="column about-single-element">
+                                <i class="fas fa-coffee icon"></i>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                            <div class="column about-single-element">
+                                <i class="fas fa-pencil-alt icon"></i>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- end about me -->
-
-        <!-- Portfolio -->
-         <div class="block">
-             <h2 class="subtitle heading-site" id="portfolio">My Portfolio</h2>
-             <div class="container">
-                <div class="tile is-ancestor">
-                    <div class="tile is-vertical is-8">
-                    <div class="tile">
-                        <div class="tile is-parent is-vertical">
-                        <article class="tile is-child notification is-primary">
-                            <p class="title">Vertical...</p>
-                            <p class="subtitle">Top tile</p>
-                        </article>
-                        <article class="tile is-child notification is-warning">
-                            <p class="title">...tiles</p>
-                            <p class="subtitle">Bottom tile</p>
-                        </article>
+                <!-- end about me -->
+                
+                <!-- Portfolio -->
+                <div class="block">
+                    <h2 class="subtitle heading-site" id="portfolio">My Portfolio</h2>
+                    <div class="container">
+                        <div class="tile is-ancestor">
+                            <div class="tile is-vertical is-8">
+                                <div class="tile">
+                                    <div class="tile is-parent is-vertical">
+                                        <article class="tile is-child notification is-primary">
+                                            <p class="title">Vertical...</p>
+                                            <p class="subtitle">Top tile</p>
+                                        </article>
+                                        <article class="tile is-child notification is-warning">
+                                            <p class="title">...tiles</p>
+                                            <p class="subtitle">Bottom tile</p>
+                                        </article>
+                                    </div>
+                                    <div class="tile is-parent">
+                                        <article class="tile is-child notification is-info">
+                                            <p class="title">Middle tile</p>
+                                            <p class="subtitle">With an image</p>
+                                            <figure class="image is-4by3">
+                                                <img src="src/img/ban1.jpg" alt="two screen computer in a office">
+                                            </figure>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="tile is-parent">
+                                    <article class="tile is-child notification is-danger">
+                                        <p class="title">Wide tile</p>
+                                        <p class="subtitle">Aligned with the right tile</p>
+                                        <div class="content">
+                                            <!-- Content -->
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification is-success">
+                                    <div class="content">
+                                        <p class="title">Tall tile</p>
+                                        <p class="subtitle">With even more content</p>
+                                        <div class="content">
+                                            <!-- Content -->
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
-                        <div class="tile is-parent">
-                        <article class="tile is-child notification is-info">
-                            <p class="title">Middle tile</p>
-                            <p class="subtitle">With an image</p>
-                            <figure class="image is-4by3">
-                            <img src="src/img/ban1.jpg" alt="two screen computer in a office">
-                            </figure>
-                        </article>
-                        </div>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification is-danger">
-                        <p class="title">Wide tile</p>
-                        <p class="subtitle">Aligned with the right tile</p>
-                        <div class="content">
-                            <!-- Content -->
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </div>
-                        </article>
-                    </div>
-                    </div>
-                    <div class="tile is-parent">
-                    <article class="tile is-child notification is-success">
-                        <div class="content">
-                        <p class="title">Tall tile</p>
-                        <p class="subtitle">With even more content</p>
-                        <div class="content">
-                            <!-- Content -->
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </div>
-                        </div>
-                    </article>
                     </div>
                 </div>
+                <!-- end Portfolio -->
             </div>
         </div>
-        <!-- end Portfolio -->
 
-        <!-- Contact -->
-        <div class="block">
-            <footer class="footer">
-                <h2 class="subtitle heading-site" id="contact">Contact me</h2>
-                <div class="footer-contact-form">
-                    <form>
-                        <div class="field">
-                            <label class="label">First Name</label>
-                            <div class="control">
-                                <input id="firstname" class="input" type="text" placeholder="e.g Alex Smith" name="firstname">
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label class="label">Last Name</label>
-                            <div class="control">
-                                <input id="lastname" class="input" type="text" placeholder="e.g Alex Smith" name="lastname">
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label class="label">Email</label>
-                            <div class="control">
-                                <input id="email" class="input" type="text" placeholder="e.g Alex Smith" name="email">
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label class="label">Message</label>
-                            <div class="control">
-                                <textarea id="message" class="textarea" placeholder="Text area" name="message"></textarea>
-                            </div>
-                        </div>
-                    </form>
-                    <button class="button is-link" id="send_email">Submit</button>
-                </div>
-                <div class="footer-informations">
-                    <p>8888 Rideau street</p>
-                    <p>One Nicholas street</p>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-twitter-square"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
+        <!-- Hero footer: will stick at the bottom -->
+        <div class="hero-foot">
+            <div class="tabs is-centered">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/moustapha.bah.56" target="_new"><span class="icon is-large"><i class="fab fa-facebook-square"></i></span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/mamadou-moustapha-bah-9962a711b" target="_new"><span class="icon is-large"><i class="fab fa-linkedin"></i></span></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/mousto9797" target="_new"><span class="icon is-large"><i class="fab fa-twitter-square"></i></span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mousto097" target="_new"><span class="icon is-large"><i class="fab fa-github"></i></i></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container has-text-centered copyright-text">
+                <p> Copyright © 2018 Mamadou Bah, All Rights Reserved.</p>
+            </div>
         </div>
-        <!-- end Contact -->
-        
-
+    </section>
 
         <!-- jquery and javaScipt -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -238,5 +193,4 @@
         <!-- end jquery and javaScipt -->
     </body>
     <!-- end body -->
-
 </html>

@@ -5,52 +5,12 @@
 }
 
 /* Header */
-.header {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    height: 70px;
-    line-height: 70px;
-    /* background-color: rgba(0, 0, 0, 0);  */
-    background-color: black;
-    /* position: fixed; */
-    /* top: 0; */
-}
-.header .header-logo {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    /* float: left; */
-    margin-left: 50px;
-}
-.header .header-menu {
-    /* float: right; */
-    margin-right: 50px;
-    display: flex;
-    justify-content: flex-end;
-}
-.header .header-menu a {
-    margin-right: 15px;
-    color: white;
-    text-shadow: 1px 1px 20px #000000;
-}
-.header .header-menu a:hover {
-    color: #3498db; 
-}
-.is-black {
-    background-color: black;
-}
 
 /* Banner */
 .banner {
-    margin-top: -24px;
     background: url('../img/finale.png') no-repeat;
-    /* height: 640px; */
-}
-.banner .banner-image {
-    /* position: relative; */
 }
 .banner .banner-content {
-    /* position: absolute; */
     width: 100%;
     text-align: center;
     padding-top: 15%;
@@ -59,13 +19,17 @@
 .banner .banner-content h1 {
     color: #FFFFFF;
     text-shadow: 1px 1px 20px #000000;
-    font-size: 2em;
+    font-size: 4em;
 }
 .banner .banner-content h2 {
     color: #FFFFFF;
     text-shadow: 1px 1px 20px #000000;
-    font-size: 0.9 em;
+    font-size: 2em;
 }
+.banner .banner-content .banner-contact {
+    margin-top: 20px;
+}
+
 /* About */
 .about .about-single-element .icon {
     font-size: 60px;
@@ -76,40 +40,25 @@
 }
 .about .about-single-element p {
     text-align: left;
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px; 
 }
 
 /* Portfolio */
 
 
 /* Footer/Contact */
-.footer .footer-informations {
-    text-align: center;
-    margin-top: 30px; 
+
+.copyright-text {
+    margin-bottom: 30px;
 }
-.footer .footer-informations ul {
-    padding: 0;
-}
-.footer .footer-informations ul li {
-    display: inline-block;
-    list-style-type: none;
+.copyright-text p {
+   font-size: 1em;
 }
 
-/* Modal */
-.own-modal {
-    padding-top: 200px;
-}
-
-/* Responsive button */
-/* @media screen and (max-width: 600px) {
-    #open_modal {
-        display: none;
-    }
-} */
+/* Responsive for phone */
 
 @media screen and (max-width: 800px) {
+
+    /* header */
     .menu-mobile {
         display: flex;
         justify-content: center;
@@ -121,5 +70,24 @@
     }
     .header-logo {
         margin-right: 55px;
+    }
+    .header-menu a, .header-logo {
+        font-size: 0.5em;
+    }
+
+    /* banner */
+    .banner .banner-content h1 {
+        font-size: 1em;
+    }
+    .banner .banner-content h2 {
+        font-size: 0.5em;
+    }
+    .banner .banner-content .banner-contact .contact-button {
+        font-size: 0.5em;
+    }
+
+    /* footer */
+    .copyright-text p {
+        font-size: 0.7em;
     }
 }
