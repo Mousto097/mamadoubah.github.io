@@ -19,17 +19,25 @@
 .hero-foot {
     background-color: #000000;
 }
+.hero.is-dark .navbar-menu {
+    background-color: #000000;
+}
 /* Header */
 
 /* Banner */
 .banner {
-    background: url('../img/finale.png') no-repeat;
+    /* background: url('../img/finale.png') no-repeat; */
+    /* background-position: 0 0; */
+    background-size: 220%;
 }
 .banner .banner-content {
     width: 100%;
     text-align: center;
     padding-top: 15%;
     padding-bottom: 23%;
+    background: url('../img/banner.jpg') no-repeat;
+    background-size: cover;
+    /* height: 100vh; Permet de prendre la taille totale de l'appareil */
 }
 .banner .banner-content h1 {
     color: #FFFFFF;
@@ -55,6 +63,10 @@
 }
 .about .about-single-element p {
     text-align: left;
+}
+.testlg {
+    max-width: 100%;
+    width: auto;
 }
 
 /* Portfolio */
@@ -116,3 +128,17 @@
         font-size: 0.6em;
     }
 }
+@media screen and (max-width: 1471px) {
+    .container.is-fullhd {
+    max-width: 100%;
+    width: 100%;
+    }
+}
+@media screen and (max-width: 1471px) {
+    .container.is-fullhd {
+    max-width: 100%;
+    width: 100%;
+    }
+}
+
+
